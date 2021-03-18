@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="ClienteProyectoDeMensajeria.ChatGrupal"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ClienteProyectoDeMensajeria"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <ListBox x:Name="listViewTodosMisAmigos" HorizontalAlignment="Left" Height="255" Margin="196,100,0,0" VerticalAlignment="Top" Width="155" Background="{x:Null}" Loaded="listViewTodosMisAmigos_Loaded" SelectionChanged="listViewTodosMisAmigos_SelectionChanged" Foreground="#DDFFFFFF"/>
+        <TextBox x:Name="textBoxNombreGrupo" materialDesign:TextFieldAssist.TextFieldCornerRadius="15" HorizontalAlignment="Left" Height="26" Margin="335,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="245" RenderTransformOrigin="0.458,0.391" Background="White"/>
+        <Label Content="Nombre del grupo" HorizontalAlignment="Left" Margin="196,49,0,0" VerticalAlignment="Top" Foreground="White" Width="133"/>
+        <Button x:Name="buttonGuardar" Content="Guardar" materialDesign:ButtonAssist.CornerRadius="15" HorizontalAlignment="Left" Margin="438,395,0,0" VerticalAlignment="Top" Width="142" FontSize="16" Click="buttonGuardar_Click"/>
+        <Button x:Name="buttonCancelar" Content="Cancelar" materialDesign:ButtonAssist.CornerRadius="15" HorizontalAlignment="Left" Margin="238,395,0,0" VerticalAlignment="Top" Width="142" FontSize="16" Background="White" Foreground="#FF673AB7" Click="buttonCancelar_Click"/>
+        <ListBox x:Name="listViewAmigosGrupo" HorizontalAlignment="Left" Height="255" Margin="446,100,0,0" VerticalAlignment="Top" Width="149" RenderTransformOrigin="0.4,0.7" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#DDFDFDFD"/>
+    </Grid>
+</UserControl>
